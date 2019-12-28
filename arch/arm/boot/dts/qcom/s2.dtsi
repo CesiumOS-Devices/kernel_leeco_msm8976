@@ -670,7 +670,6 @@
 };
 
 &pmi8950_charger {
-	qcom,battery-data = <&qrd_batterydata>;
 	qcom,float-voltage-mv = <4400>;
 	qcom,chg-led-sw-controls;
 	qcom,thermal-mitigation = <4500 3000 2000 1000 900 600 0>;
@@ -687,6 +686,8 @@
 	qcom,aicl-rerun-period-s = <3>;
 	qcom,dcin-vadc = <&pmi8950_vadc>;
 	qcom,vchg_sns-vadc = <&pmi8950_vadc>;
+	qcom,resume-soc = <99>;
+	qcom,use-otp-profile;
 };
 
 &pmi8950_fg {
